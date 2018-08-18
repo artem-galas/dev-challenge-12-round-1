@@ -1,7 +1,7 @@
 import { Injectable } from '@angular/core';
-import {Subject} from 'rxjs/Subject';
+import { Subject } from 'rxjs/Subject';
 
-import {ScheduleDataInterface} from '../models/schedule.model';
+import { ScheduleDataInterface } from '../models/schedule.model';
 
 /**
  * ScheduleService

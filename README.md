@@ -1,5 +1,7 @@
 # 12 - Dev Challenge
 
+My solution from [DevChallenge 12](https://devchallenge.it/about/) [Front End Round 1](https://devchallenge.it/wp-content/uploads/sites/2/2018/05/r1_frontend_js_pro.pdf)  
+
 ## Installation
 
 Firs of all check your need to install latest version of `Node` and `NPM`.
@@ -21,7 +23,7 @@ The Size of the builded project ~ `983 KB`
     - `chart` - `ChartComponent` build a canvas component
     - `lib` - contain non angular files which do some extra function
       - `timeInterval.ts` - calculate a time interval between to time
-      - `ingo-graph.ts` - class which draw info-graph. Contain all necessary functions for drawing
+      - `info-graph.ts` - class which draw info-graph. Contain all necessary functions for drawing
     - `material` - Material Module which using in application
     - `models` - contain classes and constants
     - `schedule-form` - ScheduleFormComponent for build form with questions to user about regular and optimized schedule

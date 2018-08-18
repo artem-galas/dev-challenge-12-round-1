@@ -1,8 +1,8 @@
-import {Component, Input, OnInit} from '@angular/core';
-import {FormBuilder, FormGroup, Validators} from '@angular/forms';
+import { Component, Input, OnInit } from '@angular/core';
+import { FormBuilder, FormGroup, Validators } from '@angular/forms';
 
-import {ScheduleModel, scheduleType} from '../models/schedule.model';
-import {ScheduleService} from '../services/schedule.service';
+import { ScheduleModel, scheduleType } from '../models/schedule.model';
+import { ScheduleService } from '../services/schedule.service';
 
 /**
  * ScheduleFormComponent
