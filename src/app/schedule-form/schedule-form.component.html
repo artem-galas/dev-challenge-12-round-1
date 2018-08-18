@@ -1,0 +1,60 @@
+<mat-card class="card-form">
+  <mat-card-header>
+    <mat-card-title>Your {{type | titlecase}} Schedule</mat-card-title>
+  </mat-card-header>
+  <mat-card-content>
+    <form [formGroup]="scheduleForm" (ngSubmit)="submitScheduleForm()">
+      <div formGroupName="sleep">
+        <div class="label-type">What time do you {{type === 'regular' ? 'usually' : 'want'}} go to bed and wake up?</div>
+        <mat-form-field>
+          <input matInput atp-time-picker formControlName="start" placeholder="Go to Bed">
+        </mat-form-field>
+        <mat-form-field>
+          <input matInput atp-time-picker formControlName="end" placeholder="Wake Up">
+        </mat-form-field>
+      </div>
+
+      <div formGroupName="commute">
+        <div class="label-type">What time do you {{type === 'regular' ? 'usually' : 'want'}} commute to work?</div>
+        <mat-form-field>
+          <input matInput atp-time-picker formControlName="start" placeholder="Start">
+        </mat-form-field>
+        <mat-form-field>
+          <input matInput atp-time-picker formControlName="end" placeholder="End">
+        </mat-form-field>
+      </div>
+
+      <div formGroupName="work">
+        <div class="label-type">What time do you {{type === 'regular' ? 'usually' : 'want'}} Start and End work?</div>
+        <mat-form-field>
+          <input matInput atp-time-picker formControlName="start" placeholder="Start Work"/>
+        </mat-form-field>
+        <mat-form-field>
+          <input matInput atp-time-picker formControlName="end" placeholder="End Work"/>
+        </mat-form-field>
+      </div>
+
+      <div formGroupName="lunch">
+        <div class="label-type">What time do you {{type === 'regular' ? 'usually' : 'want'}} have a Lunch?</div>
+        <mat-form-field>
+          <input matInput atp-time-picker formControlName="start" placeholder="Lunch Start">
+        </mat-form-field>
+        <mat-form-field>
+          <input matInput atp-time-picker formControlName="end" placeholder="Lunch End">
+        </mat-form-field>
+      </div>
+
+      <div formGroupName="home">
+        <div class="label-type">What time do you {{type === 'regular' ? 'usually' : 'want'}} get home?</div>
+        <mat-form-field>
+          <input matInput atp-time-picker formControlName="start" placeholder="Start Activity at home">
+        </mat-form-field>
+        <mat-form-field>
+          <input matInput atp-time-picker formControlName="end" placeholder="End Activity at home (go to bed)">
+        </mat-form-field>
+      </div>
+
+      <button class="full-width" type="submit" mat-raised-button color="primary">Submit</button>
+    </form>
+  </mat-card-content>
+</mat-card>

@@ -1,0 +1,18 @@
+.card-form {
+  max-width: 500px;
+  margin: 0 auto;
+  .mat-card-title {
+    font-size: 30px;
+    text-align: center;
+  }
+  .mat-form-field {
+    width: 50%;
+    text-align: center;
+  }
+
+  .label-type {
+    text-align: center;
+    font-size: 22px;
+    margin-bottom: 10px;
+  }
+}

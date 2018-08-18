@@ -1,0 +1,20 @@
+<div class="form-container" *ngIf="!(regularSchedule && optimizedSchedule); else clearBlock">
+  <dev-challenge-schedule-form *ngIf="!regularSchedule" [type]="'regular'"></dev-challenge-schedule-form>
+  <dev-challenge-schedule-form *ngIf="regularSchedule" [type]="'optimized'"></dev-challenge-schedule-form>
+</div>
+
+<ng-template #clearBlock>
+  <div class="container">
+    <button (click)="clearAll()" mat-raised-button color="primary">Try another schedule</button>
+  </div>
+</ng-template>
+
+<dev-challenge-chart *ngIf="regularSchedule"
+                     [type]="'regular'"
+                     [schedule]="regularSchedule">
+</dev-challenge-chart>
+
+<dev-challenge-chart *ngIf="optimizedSchedule"
+                     [type]="'optimized'"
+                     [schedule]="optimizedSchedule">
+</dev-challenge-chart>
